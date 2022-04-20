@@ -19,19 +19,19 @@ public class ShapeTest {
         // instantiate an object of Shapes
         Shapes shapes = new Shapes(new ArrayList<Shape>());
 
-        shapes.add(new Triangle(8, 7));
-        shapes.add(new Triangle(9, 8));
-        shapes.add(new Circle(6));
+        shapes.add(new Triangle(7, 9));
+        shapes.add(new Triangle(10, 7));
         shapes.add(new Circle(8));
-        shapes.add(new Rectangle(14, 16));
-        shapes.add(new Rectangle(3, 10));
-        shapes.add(new Hexagon(5));
-        shapes.add(new Hexagon(9));
+        shapes.add(new Circle(9));
+        shapes.add(new Rectangle(15, 18));
+        shapes.add(new Rectangle(5, 12));
+        shapes.add(new Hexagon(6));
+        shapes.add(new Hexagon(10));
 
         shapes.compute();
 
-        System.out.println(shapes.max().toString());
-        System.out.println(shapes.min().toString());
+        System.out.println("\nMax Area: " + shapes.max().toString());
+        System.out.println("Min Area: " + shapes.min().toString());
 
     }
 }
